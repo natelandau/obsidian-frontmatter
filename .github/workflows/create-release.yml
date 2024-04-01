@@ -94,7 +94,7 @@ jobs:
             # ----------------------------------------------
 
             - name: Create Release Draft
-              uses: softprops/action-gh-release@v1
+              uses: softprops/action-gh-release@v2
               with:
                   #   body_path: ".github/RELEASE-TEMPLATE.md"
                   body: ${{join(fromJson(steps.generate_notes.outputs.notes).notes, '')}}
